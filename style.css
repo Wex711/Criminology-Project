@@ -1,0 +1,174 @@
+/* ---------- GENERAL ---------- */
+
+body{
+    margin:0;
+    padding:0;
+    background:#d8ccb0;
+    background-image:linear-gradient(to bottom,#e6dcc3,#c8b79a);
+    color:#2b2117;
+    font-family:"Open Sans",sans-serif;
+    line-height:1.8;
+}
+
+/* ---------- PAGE ---------- */
+
+.mainpage{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:50px 0;
+}
+
+/* ---------- ALL TEXT BOXES ---------- */
+
+.mainpage section{
+    background:#f8f1df;
+    border:2px solid #b89c6a;
+    border-radius:18px;
+
+    width:85%;
+    margin:40px auto;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,.15);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+    transition-delay:.1s;
+}
+
+/* ---------- HOVER EFFECT ---------- */
+
+.mainpage section:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 0 25px rgba(255,236,170,.65),
+        0 8px 20px rgba(0,0,0,.25);
+
+}
+
+/* ---------- HEADINGS ---------- */
+
+h1,h2,h3{
+
+    font-family:Georgia,"Times New Roman",serif;
+
+    color:#4b2f19;
+
+    margin-top:0;
+
+    letter-spacing:1px;
+
+}
+
+h2{
+
+    font-size:2.3rem;
+
+    border-bottom:2px solid #c9b07d;
+
+    display:inline-block;
+
+    padding-bottom:10px;
+
+    margin-bottom:20px;
+
+}
+
+h3{
+
+    font-size:1.5rem;
+
+}
+
+/* ---------- PARAGRAPHS ---------- */
+
+p{
+
+    font-size:1.05rem;
+
+    max-width:900px;
+
+    margin:18px auto;
+
+}
+
+/* ---------- BLOCK QUOTES ---------- */
+
+blockquote{
+
+    font-family:Georgia,serif;
+
+    font-size:1.4rem;
+
+    font-style:italic;
+
+    color:#654321;
+
+    border-left:6px solid #a67c3d;
+
+    padding:15px 30px;
+
+    margin:35px auto;
+
+    width:80%;
+
+    background:#efe4c8;
+
+}
+
+/* ---------- CITATIONS ---------- */
+
+.citation{
+
+    font-size:.9rem;
+
+    color:#6b5d48;
+
+    font-style:italic;
+
+}
+
+/* ---------- LINKS ---------- */
+
+a{
+
+    color:#593d16;
+
+    text-decoration:none;
+
+}
+
+a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width:900px){
+
+.mainpage section{
+
+    width:95%;
+
+    padding:25px;
+
+}
+
+blockquote{
+
+    width:90%;
+
+}
+
+}

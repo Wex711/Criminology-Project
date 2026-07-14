@@ -1,0 +1,236 @@
+/* ---------- PAGE ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#d8ccb0;
+    background-image:linear-gradient(#e7dfc9,#c7b69a);
+    color:#2c2116;
+    font-family:"Open Sans",sans-serif;
+    line-height:1.7;
+
+}
+
+/* ---------- HEADER ---------- */
+.headblock{
+    background:#60472f;
+    padding:30px 18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 3px 12px rgba(0,0,0,.22);
+    min-height:105px;
+}
+/* ---------- HEADER TITLE ---------- */
+.headblock h1{
+    color:#f3e7cb;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:2rem;
+    margin:0;
+}
+/* ---------- NAVIGATION BOX ---------- */
+nav{
+    background:#725437;
+    border-radius:16px;
+    padding:8px 18px;
+}
+/* ---------- NAVIGATION LIST ---------- */
+nav ul{
+    display:flex;
+    align-items:center;
+    list-style:none;
+    gap:12px;
+    margin:0;
+    padding:0;
+}
+/* ---------- NAVIGATION ITEMS ---------- */
+nav li{
+    list-style:none;
+}
+/* ---------- NAVIGATION LINKS ---------- */
+nav a{
+    display:block;
+    color:#fff8e8;
+    text-decoration:none;
+    padding:9px 20px;
+    border-radius:10px;
+    transition:background .25s ease,box-shadow .25s ease,color .25s ease;
+    transition-delay:.1s;
+}
+/* ---------- DIMMER NAVIGATION HOVER ---------- */
+nav a:hover{
+    background:#846341;
+    color:#fffaf0;
+    box-shadow:0 0 7px rgba(219,186,118,.4);
+}
+/* ---------- RESPONSIVE HEADER ---------- */
+@media (max-width:900px){
+    .headblock{
+        flex-direction:column;
+        gap:18px;
+        text-align:center;
+    }
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+
+/* ---------- MAIN ---------- */
+
+.mainpage{
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:40px 0;
+
+}
+
+/* ---------- TEXT BOXES ---------- */
+
+.mainpage section{
+
+    background:#f8f2e4;
+
+    border:2px solid #b59869;
+
+    border-radius:18px;
+
+    width:90%;
+
+    margin:30px auto;
+
+    padding:22px 28px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.18);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+    transition-delay:.1s;
+
+}
+
+/* ---------- BOX HOVER ---------- */
+
+.mainpage section:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 0 20px rgba(255,236,170,.65),
+        0 8px 18px rgba(0,0,0,.22);
+
+}
+
+/* ---------- HEADINGS ---------- */
+
+h1,h2{
+
+    font-family:Georgia,serif;
+
+    color:#4b3018;
+
+    margin-bottom:15px;
+
+}
+
+h2{
+
+    border-bottom:2px solid #c8ae7b;
+
+    padding-bottom:8px;
+
+}
+
+/* ---------- PARAGRAPHS ---------- */
+
+p{
+
+    margin-top:10px;
+
+    margin-bottom:10px;
+
+}
+
+/* ---------- BLOCKQUOTE ---------- */
+
+blockquote{
+
+    margin:20px auto;
+
+    background:#efe2bf;
+
+    border-left:6px solid #9f6f2b;
+
+    padding:15px 20px;
+
+    width:90%;
+
+    font-style:italic;
+
+    font-family:Georgia,serif;
+
+}
+
+/* ---------- STRONG ---------- */
+
+strong{
+
+    color:#6b2d13;
+
+}
+
+/* ---------- LINKS ---------- */
+
+a{
+
+    transition:.25s;
+
+}
+
+a:hover{
+
+    text-decoration:none;
+
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width:900px){
+
+.headblock{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+nav ul{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.mainpage section{
+
+    width:98%;
+
+    padding:18px;
+
+}
+
+}

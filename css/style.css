@@ -252,3 +252,67 @@ nav ul{
 }
 
 }
+
+/* ---------- THEORY FLEXBOX ---------- */
+
+.theory-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:24px;
+    width:100%;
+    margin:30px auto;
+}
+
+/* Three boxes per row on wider screens */
+
+.theory-grid section{
+    flex:0 1 calc(33.333% - 24px);
+    width:auto;
+    margin:0;
+    padding:20px;
+}
+
+/* Keep the theory boxes visually balanced */
+
+.theory-grid h2{
+    text-align:center;
+}
+
+.theory-grid p{
+    text-align:left;
+}
+
+/* ---------- OTHER CONTENT BOXES ---------- */
+
+.risk-factors,
+.real-accounts,
+.crime-statistics{
+    width:90%;
+    margin:30px auto;
+    padding:20px 24px;
+}
+
+/* ---------- TABLET ---------- */
+
+@media (max-width:1000px){
+
+    .theory-grid section{
+        flex:0 1 calc(50% - 24px);
+    }
+
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width:650px){
+
+    .theory-grid{
+        gap:18px;
+    }
+
+    .theory-grid section{
+        flex:0 1 100%;
+    }
+
+}
